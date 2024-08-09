@@ -30,8 +30,8 @@ def read_query_from_file(file_path):
 st.set_page_config(layout="wide")
 tcol1,tcol2,tcol3 = st.columns([1,8,1])
 
-gg21_donations_query_path = './gg21/queries/gg21_donations.sql'
-gg21_apps_query_path = './gg21/queries/gg21_apps.sql'
+gg21_donations_query_path = './queries/gg21_donations.sql'
+gg21_apps_query_path = './queries/gg21_apps.sql'
 
 
 # Add header
@@ -65,7 +65,7 @@ if address and address != 'None':
             #STEP 0: Get historical donations, GG21 donations, and GG21 applications
 
             # Load historical donations from GG18 through GG20
-            hist_donations_df = pd.read_csv('./gg21/data/donations_18_to_20.csv')
+            hist_donations_df = pd.read_csv('./data/donations_18_to_20.csv')
 
             # Load latest donations for GG21
             query = read_query_from_file(gg21_donations_query_path)
@@ -183,7 +183,7 @@ if address and address != 'None':
 
             # Create embeddings for user's favorite projects from the past
 
-            past_projects = pd.read_csv('./gg21/data/apps_18_to_20.csv')
+            past_projects = pd.read_csv('./data/apps_18_to_20.csv')
 
             top_20_recipients = supported_by_user.nlargest(20, 'amount_in_usd')[['recipient_address']]
 
@@ -195,8 +195,8 @@ if address and address != 'None':
             # Calculate similarities with GG21 projects for top past favorites
                 
             # Load embeddings for GG21 projects
-            gg21_app_embeddings = np.load('./gg21/data/gg21_embeddings.npy')
-            gg21_apps = pd.read_csv('./gg21/data/gg21_apps.csv')
+            gg21_app_embeddings = np.load('./data/gg21_embeddings.npy')
+            gg21_apps = pd.read_csv('./data/gg21_apps.csv')
 
 
             ##
