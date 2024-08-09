@@ -1,0 +1,2 @@
+*.csv filter=lfs diff=lfs merge=lfs -text
+data/donations_18_to_20.csv filter=lfs diff=lfs merge=lfs -text
