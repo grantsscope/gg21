@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine
+import pg8000
 
 DB_HOST= st.secrets['DB_HOST']
 DB_PORT = st.secrets['DB_PORT']
