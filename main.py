@@ -3,7 +3,6 @@ import pandas as pd
 import streamlit.components.v1 as components
 import re
 import numpy as np
-import plotly.express as px
 from database import fetch_data
 from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
