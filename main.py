@@ -190,7 +190,7 @@ if address and address != 'None':
             # Filter past_projects to get the rows where the recipient is in the top 20 recipients
             user_donated_projects = past_projects[past_projects['recipient'].isin(top_20_recipients['recipient_address'])]
 
-            user_donated_embeddings = model.encode(user_donated_projects['description'].tolist(), show_progress_bar=False))
+            user_donated_embeddings = model.encode(user_donated_projects['description'].tolist(), show_progress_bar=False)
 
             # Calculate similarities with GG21 projects for top past favorites
                 
