@@ -1,7 +1,7 @@
 streamlit
 pandas
 numpy
-sklearn.metrics.pairwise
+scikit-learn
 sentence_transformers
 logging
 psycopg2
