@@ -4,4 +4,4 @@ numpy
 scikit-learn
 sentence_transformers
 logging
-psycopg2
+sqlalchemy
