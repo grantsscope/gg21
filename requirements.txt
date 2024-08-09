@@ -5,3 +5,4 @@ numpy
 sklearn.metrics.pairwise
 sentence_transformers
 logging
+psycopg2
