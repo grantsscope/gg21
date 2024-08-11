@@ -36,6 +36,7 @@ gg21_apps_query_path = './queries/gg21_apps.sql'
 
 # Add header
 tcol2.title("GrantsScope for GG21")
+tcol2.caption("Created by [Rohit Malekar](https://twitter.com/rohitmalekar) | [grantsscope.xyz](https://grantsscope.xyz)")
 tcol2.markdown("### Get one-click personalized grantee recommendations based on your Gitcoin donation history")
 tcol2.markdown('We\'re excited to offer you curated recommendations to enhance your contribution experience. Here\'s what you can expect:')
 tcol2.markdown('1. **Cherished Allies:** Re-discover the grantees you\'ve supported in the past.' + '\n' \
