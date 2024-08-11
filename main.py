@@ -74,9 +74,9 @@ if address and address != 'None':
             # Fetch data using the query
             
             try:
-            gg21_donations_df = fetch_data(query)
+                gg21_donations_df = fetch_data(query)
             except Exception as e:
-            tcol2.error(f"Error fetching data: {e}",icon="🚨")            
+                tcol2.error(f"Error fetching data: {e}",icon="🚨")            
             
             
             # Load latest applications for GG21
@@ -84,9 +84,9 @@ if address and address != 'None':
             
             # Fetch data using the query
             try:
-            gg21_apps_df = fetch_data(query)
+                gg21_apps_df = fetch_data(query)
             except Exception as e:
-            tcol2.error(f"Error fetching data: {e}",icon="🚨")   
+                tcol2.error(f"Error fetching data: {e}",icon="🚨")   
             
             # STEP 1: Display projects previously supported by user that are participating in GG21
             
