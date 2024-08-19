@@ -154,7 +154,8 @@ if address and address != 'None':
                 ]    
                 
                 # 2.5 Sort these never-before-donated projects by donation amounts from the cohort
-                other_recipients_sorted = other_recipients.groupby('recipient_address').sum().sort_values(by='amount_in_usd', ascending=False)
+                #other_recipients_sorted = other_recipients.groupby('recipient_address').sum().sort_values(by='amount_in_usd', ascending=False)
+                other_recipients_sorted = other_recipients.groupby('recipient_address').size().sort_values(ascending=False)
                 other_recipients_sorted = other_recipients_sorted.reset_index()
                 reco_recipient_address = other_recipients_sorted['recipient_address']
                 
